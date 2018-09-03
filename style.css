@@ -3,6 +3,7 @@ body {
 	margin: 0;
 }
 
+/*NAVBAR*/
 .topnav {
   overflow: hidden;
   background-color: #799090;
@@ -49,30 +50,50 @@ body {
 }
 
 
-h1{
-	padding-top: 60px;
+
+/*PICTURE FROM CSS*/
+
+#csspic {
+    /*background-image: linear-gradient(red,blue);*/
+    background-image: url("images/alexander-andrews-636454-unsplash.jpg");
+	background-color: #cccccc;
+  	height: 667px;
+  	background-position: center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
 }
+
+@media screen and (min-width: 600px){
+#csspic {
+    
+    background-image: url("images/alexander-andrews-636454-unsplash.jpg");
+	background-color: #cccccc;
+  	height: 375px;
+  	background-position: center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}}
+
+@media screen and (min-width: 750px){
+#csspic {
+    
+    background-image: url("images/alexander-andrews-636454-unsplash.jpg");
+	background-color: #cccccc;
+  	height: 900px;
+  	background-position: center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}}
 
 /*BUTTON ON IMAGE*/
-/*.container{
-	max-height: 300;
-	width: 100%;
-	background-color: blue;
-	
-}
-
-#mappic {
-	max-height: 375;
-	width: 100%;
-	}*/
-img {
-	vertical-align: top;
-}
-
+/*MOBILE VERTICAL STYLE*/
 .btn0 {
   position: absolute;
-  top: 40%;
-  left: 70%;
+  top: 75%;
+  left: 50%;
  /* transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);*/
   background-color: #EBA76E;
@@ -86,9 +107,9 @@ img {
 
 .btn1 {
   position: absolute;
-  top: 55%;
-  left: 70%;
-  /*transform: translate(-50%, -50%);
+  top: 85%;
+  left: 50%;
+ /* transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);*/
   background-color: #EBA76E;
   color: white;
@@ -99,22 +120,89 @@ img {
   border-radius: 5px;
 }
 
+/*MOBILE HORIZONTAL STYLE*/
+@media only screen and (min-width: 600px){
+.btn0 {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+ /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
+  background-color: #EBA76E;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}}
+
+@media only screen and (min-width: 600px){
+.btn1 {
+  position: absolute;
+  top: 75%;
+  left: 70%;
+ /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
+  background-color: #EBA76E;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}}
+
+/*DESKTOP STYLE*/
+@media screen and (min-width: 750px){
+.btn0 {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+ /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
+  background-color: #EBA76E;
+  color: white;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}}
+
+@media screen and (min-width: 750px){
+.btn1 {
+  position: absolute;
+  top: 85%;
+  left: 75%;
+ /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
+  background-color: #EBA76E;
+  color: white;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+}
+
 .btn0:hover {
 
 	background-color: #009090;
 	transform: scale(1.05);
-	
-
 }
 
 .btn1:hover {
 
 	background-color: #009090;
 	transform: scale(1.05);
-	
 }
 
 
+
+/*CONTENT*/
 #content0{
 	background-color: grey;
 	height: 400px;
