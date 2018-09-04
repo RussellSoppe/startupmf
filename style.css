@@ -1,11 +1,18 @@
+/*MOBILE VERTICAL STYLE*/
 /* Style the navigation menu */
+body {
+	margin: 0;
+}
+
+/*NAVBAR*/
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #799090;
   /*position: relative;*/
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  z-index: 1; /*keeps elements from riding over*/
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -13,57 +20,301 @@
   display: none;
 }
 
+/*style for logo*/
+#logo{
+	transform: scale(1.5);
+	padding-left: 20px;
+	padding-top: 3px;
+}
+
 /* Style navigation menu links */
 .topnav a {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
   display: block;
 }
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: black;
+  background: 007474;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  transform: scale(1.5);
+  padding-left: 10px;
+  
+
 }
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #007474;
+  color: white;
 }
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #4CAF50;
+  background-color: #009090;
   color: white;
 }
 
-h1{
-	padding-top: 60px;
+
+/*PICTURE FROM CSS*/
+#csspic {
+    /*background-image: linear-gradient(red,blue);*/
+    background-image: url("images/alexander-andrews-636454-unsplash.jpg");
+	background-color: #cccccc;
+  	height: 667px;
+  	background-position: center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
 }
 
-#content0{
-	background-color: grey;
-	height: 400px;
-	width: 100%;
+/*BUTTON ON IMAGE*/
+.btn0 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+ /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
+  background-color: #EBA76E;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
+.btn1 {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+ /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
+  background-color: #EBA76E;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+.btn0:hover {
+
+	background-color: #009090;
+	transform: scale(1.05);
+}
+
+.btn1:hover {
+
+	background-color: #009090;
+	transform: scale(1.05);
+}
+
+
+/*CONTENT*/
+#content0{
+	background-color: #009090;
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	padding-bottom: 40px;
+}
+#content00{
+	background-color: white;
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	color: #009090;
+}
+
+.featurestext {
+	tranform: scale(2);
+	font-family: 'Anton', sans-serif;
+}
+
+.reasonswhytext{
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+
+#ideaboxes{
+	background-color: white;
+	height: 300px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.ideabox{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	animation: slideup 3s;
+	/*padding-top: 25px;*/
+	padding-bottom: 25px;
+	padding-left: 40px;
+}
+
+@keyframes slideup{
+	from {
+		margin-top: 100%;
+		height: 300%;
+	}
+	to {
+		margin-top: 0%;
+		height: 100%;
+	}
+}
+
+.idealine {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.material-icons{
+	color: #EBA76E;
+	padding-right: 10px;
+	padding-top: 3.3px;
+	transform: scale(1.5);
+}
+
+.ideatext {
+	color: #009090;
+	background-color: none;
+	width: 100px;
+	height:25px;
+	padding-top: 5px;
+	padding-left:5px;
+	
 }
 
 #content1{
 	background-color: lightgrey;
-	height: 400px;
+	height: auto;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.howtoimage{
+	background-image: url("images/hendrik-morkel-580658-unsplash.jpg");
+	background-color: #cccccc;
+  	height: 300px;
+  	background-position: center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}
+
+.howtouse{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+.howtousetext{
+	font-family: 'Anton', sans-serif;
+	color: #009090;
 
 }
 
+#content11{
+	background-color: lightgrey;
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.steps {
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+
+#arrow0{
+	padding-bottom: 10px;
+}
+
+#arrow1{
+	padding-top: 7px;
+}
+
+#arrow0{
+	padding-bottom: 20px;
+}
+
+.faqs {
+	background-color: #009090;
+	color:white;
+	display: flex;
+	justify-content: center;
+}
+
 #content2{
-	background-color: black;
-	height: 400px;
+	background-color: white;
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #EBA76E;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+ }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    /*padding: 0 18px;*/
+    background-color: white;
+    display: none;
+    
+}
+
+#content3{
+	background-color: white;
+	height: auto;
 	width: 100%;
 }
 
