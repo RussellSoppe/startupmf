@@ -1,0 +1,48 @@
+/*MOBILE HORIZONTAL STYLE*/
+
+/*PICTURE FROM CSS*/
+@media screen and (min-width: 600px){
+#csspic {
+    
+    background-image: url("images/alexander-andrews-636454-unsplash.jpg");
+  background-color: #cccccc;
+    height: 375px;
+    background-position: center;
+  background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}}
+
+/*BUTTON ON IMAGE*/
+@media only screen and (min-width: 600px){
+.btn0 {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+ /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
+  background-color: #EBA76E;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}}
+
+/*BUTTON ON IMAGE*/
+@media only screen and (min-width: 600px){
+.btn1 {
+  position: absolute;
+  top: 75%;
+  left: 70%;
+ /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
+  background-color: #EBA76E;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}}
