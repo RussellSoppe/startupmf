@@ -318,3 +318,12 @@ body {
 	width: 100%;
 }
 
+.infoline {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 10px;
+}
+
+.infoimage {
+	padding-right: 10px;
+}
