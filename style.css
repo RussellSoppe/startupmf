@@ -69,7 +69,7 @@ body {
     /*background-image: linear-gradient(red,blue);*/
     background-image: url("images/alexander-andrews-636454-unsplash.jpg");
 	background-color: #cccccc;
-  	height: 667px;
+  	height: 590px;
   	background-position: center;
  	background-repeat: no-repeat;
   	background-size: cover;
@@ -79,7 +79,7 @@ body {
 /*BUTTON ON IMAGE*/
 .btn0 {
   position: absolute;
-  top: 75%;
+  top: 65%;
   left: 50%;
  /* transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);*/
@@ -94,7 +94,7 @@ body {
 
 .btn1 {
   position: absolute;
-  top: 85%;
+  top: 75%;
   left: 50%;
  /* transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);*/
@@ -276,6 +276,14 @@ body {
 	color:white;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width:100%;
+}
+
+#faqstext {
+	transform: scale(2.5);
+
 }
 
 #content2{
@@ -301,15 +309,13 @@ body {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #009090;
 }
 
-/* Style the accordion panel. Note: hidden by default */
+/* Style the accordion panel. Note: no longer hidden by default */
 .panel {
-    /*padding: 0 18px;*/
     background-color: white;
     display: none;
-    
 }
 
 #content3{
@@ -326,4 +332,28 @@ body {
 
 .infoimage {
 	padding-right: 10px;
+}
+
+.bottomlink:link {
+    color: #009090;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.bottomlink:visited {
+    color: #EBA76E;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.bottomlink:hover {
+    color: #EBA76E;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.bottomlink:active {
+    color: #009090;
+    background-color: transparent;
+    text-decoration: none;
 }
